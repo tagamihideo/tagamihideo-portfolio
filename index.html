@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲームプログラマー - ポートフォリオ</title>
+
+
+    <!-- CSSファイル読み込み -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- JSの読み込み -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+
+    <!-- Slick CSS読み込み -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+    <script src="plugins/slick/slick.js"></script>
+
+    <!-- Lightbox CSS読み込み -->
+    <link rel="stylesheet" href="plugins/dist/css/lightbox.css">
+    <script src="plugins/dist/js/lightbox.js"></script>
+
+    <!-- Bootstrap読み込み -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- ページ専用読み込み -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a class="header-item" href="#profile">自己紹介</a>
+                <a class="header-item" href="#skill">スキル</a>
+                <a class="header-item" href="#game">ゲーム作品</a>
+                <!-- <a class="header-item" href="#activity">活動</a>
+                <a class="header-item" href="#contact">お問い合わせ</a> -->
+            </nav>
+        </div>
+    </header>
+
+    <section id="profile">
+        <div class="title">
+            <h1>自己紹介</h1>
+        </div>
+        <div class="container">
+            <div class="main">
+                <img id="profile-image" src="imgs/profile.png" alt="プロフィール画像">
+                <div class="profile-text">
+                <p>学校：横浜デジタルアーツ専門学校  ゲーム科</p>
+                <h2>田上ヒデオ</h2>
+                <p>2005年 5月19日生まれ</p>
+                <table border="1">
+                    <tr>
+                        <th>資格</th>
+                        <td>
+                            情報技術検定 3級、
+                            CGクリエイター検定 ベーシック
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <th>趣味・特技</th>
+                        <td>ゲーム、ゲーム大会観戦</td>
+                    </tr>
+                    <tr>
+                        <th>好きなゲーム</th>
+                        <td>StreetFighter6、League of Legends、大乱闘スマッシュブラザーズ</td>
+                    </tr>
+                </table>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section id="skill">
+        <div class="title">
+            <h2>スキル</h2>
+        </div>
+        <div class="container">
+            <div class="main">
+                <table border="1">
+                <tr>
+                    <th colspan="2">開発言語・ツール</th>
+                </tr>
+                <tr>
+                    <th>開発言語</th>
+                    <td>C / C++</td>
+                </tr>
+                <tr>
+                    <th>ゲーム開発</th>
+                    <td>Unity</td>
+                </tr>
+                <tr>
+                    <th>制作ツール</th>
+                    <td>Visual Studio</td>
+                </tr>
+            </table>
+            </div> 
+        </div>
+    </section>
+
+    <section id="game">
+        <div class="title">
+            <h2>ゲーム作品一覧</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- 左側: タイトルリスト -->
+                <div class="col-md-6">
+                    <div class="main">
+                        <ol>
+                            <li type="1"><a href="#fight">格闘ゲーム</a></li>
+                            <li type="1"><a href="#rts">rts</a></li>
+                            <li type="1"><a href="#avoid">Block Avoid</a></li>
+                            <li type="1"><a href="#tank">Tank Simulation</a></li>
+                            <li type="1"><a href="#origami">折り紙フォールディング</a></li>
+                            <li type="1"><a href="#xevious">XEVIOUS(ゼビウス)</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- 右側: スライダー -->
+                <div class="col-md-6">
+                    <div class="slider">
+                        <img src="imgs/fighting1.png" alt="格闘ゲームのスクリーンショット">
+                        <img src="imgs/BlockAvoid.png" alt="Block Avoidのスクリーンショット">
+                        <img src="imgs/TankSimulation.png" alt="Tank Simulationのスクリーンショット">
+                        <img src="imgs/origami.png" alt="折り紙フォールディングのスクリーンショット">
+                        <img src="imgs/xevious.png" alt="XEVIOUSのスクリーンショット">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fight">
+            <div class="title">
+                <h2>1.格闘ゲーム（制作中）</h2>
+            </div>
+            <div class="overview">
+                <h3>概要</h3>
+                <p>
+                2D格闘ゲーム<br>
+                </p>
+            </div>
+        <div class="container">
+                <div class="main">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="slider">
+                                <img src="imgs/fighting1.png" alt="fightingのスクリーンショット">
+                                <img src="imgs/fighting2.png" alt="fightingのスクリーンショット">
+                            </div>
+                            <video src="videos/fighting.mp4">ご使用のブラウザでは動画再生に対応していません</video>
+                        </div>
+                        <div class="col-md-6">    
+                            <h4>アピールポイント</h4>
+                            <p>
+                                拡張エディター
+                                
+                            </p>
+                                                
+                            <table border="1">
+                                <tr>
+                                    <th>プラットフォーム</th>
+                                    <td>Windows</td>
+                                </tr>
+                                <tr>
+                                    <th>開発環境</th>
+                                    <td>Unity、C#</td>
+                                </tr>
+                                <tr>
+                                    <th>製作期間</th>
+                                    <td>2025/9 ~ </td>
+                                </tr>
+                                <tr>
+                                    <th>制作人数</th>
+                                    <td>1人</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="rts">
+            <div class="title">
+                <h2>2.rts(制作中)</h2>
+            </div>
+            <div class="overview">
+                <h3>概要</h3>
+                <p>
+                3Dリアルストラテジーゲーム<br>
+                </p>
+            </div>
+        <div class="container">
+                <div class="main">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="imgs/xevious.png" alt="rtsのスクリーンショット">
+                        </div>
+                        <div class="col-md-6">    
+                            <h4>アピールポイント</h4>
+                            <p>スコア更新時の名前登録処理</p>
+                                                
+                            <table border="1">
+                                <tr>
+                                    <th>プラットフォーム</th>
+                                    <td>Windows</td>
+                                </tr>
+                                <tr>
+                                    <th>開発環境</th>
+                                    <td>Unity、C#</td>
+                                </tr>
+                                <tr>
+                                    <th>製作期間</th>
+                                    <td>2024/10 ~ 2025/2</td>
+                                </tr>
+                                <tr>
+                                    <th>制作人数</th>
+                                    <td>4人</td>
+                                </tr>
+                                <tr>
+                                    <th>担当箇所</th>
+                                    <td>UI、シーン遷移、ランキング</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="avoid">
+        <div class="title">
+            <h2>3.Block Avoid</h2>
+        </div>
+        <div class="overview">
+            <h3>概要</h3>
+            <p>
+            スワイプ操作でキャラクターを合体・分裂させながら障害物を避けて進むゲームです。<br>
+            </p>
+        </div>
+        <div class="container">
+            <div class="main">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="imgs/BlockAvoid.png" alt="Block Avoidのスクリーンショット">
+                        <img src="imgs/BlockAvoid.png" alt="Block Avoidのスクリーンショット">
+                        <br>
+                        <div class="slider">
+                            <img src="imgs/BlockAvoid.png" alt="Block Avoidのスクリーンショット">
+                            <img src="imgs/TankSimulation.png" alt="Tank Simulationのスクリーンショット">
+                            <img src="imgs/origami.png" alt="折り紙フォールディングのスクリーンショット">
+                            <img src="imgs/xevious.png" alt="XEVIOUSのスクリーンショット">
+                        </div>
+                    </div>
+                    <div class="col-md-6">    
+                        <h4>アピールポイント</h4>
+                        <p>プレイヤーの分裂・合体処理</p>
+                        <p>スワイプ処理</p>                    
+                        <table border="1">
+                            <tr>
+                                <th>プラットフォーム</th>
+                                <td>Android</td>
+                            </tr>
+                            <tr>
+                                <th>開発環境</th>
+                                <td>Unity、C#</td>
+                            </tr>
+                            <tr>
+                                <th>製作期間</th>
+                                <td>2024年</td>
+                            </tr>
+                            <tr>
+                                <th>制作人数</th>
+                                <td>3人</td>
+                            </tr>
+                            <tr>
+                                <th>担当箇所</th>
+                                <td>プレイヤー、アイテム処理、障害物</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tank">
+        <div class="title">
+            <h2>4.Tank Simulation</h2>
+        </div>
+        <div class="overview">
+            <h3>概要</h3>
+            <p>
+            砲手と操縦手に分かれて戦車を操る2人用シミュレーションゲームです。<br>
+            </p>
+        </div>
+        <div class="container">
+            <div class="main">
+                <div class="row">
+                    <div class="col-md-6">
+                        <video src="videos/TankSimulation.mp4">ご使用のブラウザでは動画再生に対応していません</video>
+                    </div>
+                    <div class="col-md-6">    
+                        <h4>アピールポイント</h4>
+                        <p>ゲーム筐体向けに作ったゲーム</p>
+                        <p>スワイプ処理</p>                    
+                        <table border="1">
+                            <tr>
+                                <th>プラットフォーム</th>
+                                <td>ゲーム筐体</td>
+                            </tr>
+                            <tr>
+                                <th>開発環境</th>
+                                <td>Unity、C#</td>
+                            </tr>
+                            <tr>
+                                <th>製作期間</th>
+                                <td>2025/9/9 ~ 10/24</td>
+                            </tr>
+                            <tr>
+                                <th>制作人数</th>
+                                <td>5人</td>
+                            </tr>
+                            <tr>
+                                <th>担当箇所</th>
+                                <td>UI、進行管理、データ結合</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="origami">
+            <div class="title">
+                <h2>5.折り紙フォールディング</h2>
+            </div>
+            <div class="overview">
+                <h3>概要</h3>
+                <p>
+                画面に表示されたキーを押して、<br>
+                スコアを競うタイピングゲームです。<br>
+                </p>
+            </div>
+        <div class="container">
+                <div class="main">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <video src="videos/origami.mp4">ご使用のブラウザでは動画再生に対応していません</video>
+                            <div class="slider">
+                                <img src="imgs/origami.png" alt="折り紙フォールディングのスクリーンショット">
+                            </div>
+                        </div>
+                        <div class="col-md-6">    
+                            <h4>アピールポイント</h4>
+                            <p>ゲームイベントにて3日で作成</p>
+                            <table border="1">
+                                <tr>
+                                    <th>プラットフォーム</th>
+                                    <td>Windows</td>
+                                </tr>
+                                <tr>
+                                    <th>開発環境</th>
+                                    <td>Unity、C#</td>
+                                </tr>
+                                <tr>
+                                    <th>製作期間</th>
+                                    <td>2025/8/8 ~ 8/10</td>
+                                </tr>
+                                <tr>
+                                    <th>制作人数</th>
+                                    <td>6人</td>
+                                </tr>
+                                <tr>
+                                    <th>担当箇所</th>
+                                    <td>移動処理、進行管理、データ結合</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="xevious">
+            <div class="title">
+                <h2>6.XEVIOUS</h2>
+            </div>
+            <div class="overview">
+                <h3>概要</h3>
+                <p>
+                2Dシューティングゲーム<br>
+                １年次にゲーム制作を学ぶために再現しました。
+                </p>
+            </div>
+        <div class="container">
+                <div class="main">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="imgs/xevious.png" alt="XEVIOUSのスクリーンショット">
+                        </div>
+                        <div class="col-md-6">    
+                            <h4>アピールポイント</h4>
+                            <p>スコア更新時の名前登録処理</p>
+                                                
+                            <table border="1">
+                                <tr>
+                                    <th>プラットフォーム</th>
+                                    <td>Windows</td>
+                                </tr>
+                                <tr>
+                                    <th>開発環境</th>
+                                    <td>Dxlib、C</td>
+                                </tr>
+                                <tr>
+                                    <th>製作期間</th>
+                                    <td>2024/10 ~ 2025/2</td>
+                                </tr>
+                                <tr>
+                                    <th>制作人数</th>
+                                    <td>4人</td>
+                                </tr>
+                                <tr>
+                                    <th>担当箇所</th>
+                                    <td>UI、シーン遷移、ランキング</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- <section id="activity">
+        <div class="title">
+            <h2>活動</h2>
+        </div>
+        <div class="container">
+            <p>ここに活動内容の説明が入ります。</p>
+        </div>
+    </section> -->
+<!-- 
+    <section id="contact">
+        <div class="title">
+            <h2>お問い合わせ</h2>
+        </div>
+        <div class="container">
+            <div class="main">
+                <p>お問い合わせは以下のメールアドレスまでお願いいたします。</p>
+                <p>Email:tagami.hideo0519@gmail.com</p>
+        </div>
+    </section> -->
+</body>
+</html>

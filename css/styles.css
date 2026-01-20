@@ -1,0 +1,140 @@
+/* 基本のスタイル */
+body 
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0; 
+    padding-top: 80px;
+}
+
+img
+{
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;    /* 画像をアスペクト比を保ちつつフィットさせる */
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto 40px auto;
+    border-collapse: collapse;
+}
+
+table th
+{
+    background-color: #d3d3d3;
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+table td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+video {
+    width: 100%;  /* モバイルで全幅 */
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;  /* モバイルで高さを制限 */
+    object-fit: contain;  /* アスペクト比を保つ */
+    display: block;
+    margin: 10px 0;  /* 余白 */
+}
+
+/* ヘッダーのスタイル */
+#header 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #333;
+    z-index: 1000;
+}
+
+.container 
+{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-item 
+{
+    color: rgb(255, 255, 255);
+    flex : 1;
+    align-items: center;
+    text-align: center;
+}
+
+/* 各項目ごとのタイトル */
+.title 
+{
+    font-size: 36px;
+    font-weight: 700;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 概要 */
+.overview
+{
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #a3b8f2;
+    color: #000000;
+    padding: 20px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+/* 自己紹介 */
+#profile .main {
+    display: flex;
+    flex-direction: column; /* モバイルでは縦並び */
+    align-items: center;
+    gap: 40px;
+}
+
+/* 代わりにスライダーのスタイルを追加 */
+.slider {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    video {
+        max-width: 400px;  /* PCで幅を制限 */
+        max-height: 300px;  /* PCで高さを制限 */
+    }
+    
+    #profile .main {
+        flex-direction: row; /* PCで横並び */
+        align-items: flex-start; /* 上揃えでバランス良く */
+        gap: 40px;
+    }
+    
+    #myFace {
+        flex: 1; /* 画像を柔軟に広げる */
+        max-width: 40%; /* 幅を40%に制限 */
+    }
+    
+    .profileText {
+        flex: 1; /* テキストを柔軟に広げる */
+        max-width: 60%; /* 幅を60%に制限 */
+    }
+}
