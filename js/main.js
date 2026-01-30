@@ -19,3 +19,27 @@ lightbox.option({
     'wrapAround': true
 });
 
+$(document).ready(function(){
+    // すべての動画要素を取得
+    $('video').each(function() {
+        var video = this;
+        // PC（768px以上）でループオン、モバイルでオフ
+        if ($(window).width() >= 768) {
+            video.loop = true;
+        } else {
+            video.loop = false;
+        }
+    });
+    
+    // ウィンドウリサイズ時にも適用（オプション）
+    $(window).resize(function() {
+        $('video').each(function() {
+            var video = this;
+            if ($(window).width() >= 768) {
+                video.loop = true;
+            } else {
+                video.loop = false;
+            }
+        });
+    });
+});

@@ -45,6 +45,7 @@ video {
     max-height: 200px;  /* モバイルで高さを制限 */
     object-fit: contain;  /* アスペクト比を保つ */
     display: block;
+    border: 3px solid #000000;
     margin: 10px 0;  /* 余白 */
 }
 
