@@ -50,27 +50,31 @@
             <div class="main">
                 <img id="profile-image" src="imgs/profile.png" alt="プロフィール画像">
                 <div class="profile-text">
-                <p>学校：横浜デジタルアーツ専門学校  ゲーム科</p>
-                <h2>田上ヒデオ</h2>
-                <p>2005年 5月19日生まれ</p>
-                <table border="1">
-                    <tr>
-                        <th>資格</th>
-                        <td>
-                            情報技術検定 3級、
-                            CGクリエイター検定 ベーシック
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <th>趣味・特技</th>
-                        <td>ゲーム、ゲーム大会観戦</td>
-                    </tr>
-                    <tr>
-                        <th>好きなゲーム</th>
-                        <td>StreetFighter6、League of Legends、大乱闘スマッシュブラザーズ、 GUILTY GEAR -STRIVE-</td>
-                    </tr>
-                </table>
+                    <p class="intro">
+                    Unityを中心に、ゲームシステム実装や操作感を重視したゲーム制作を行っています。
+                    格闘ゲーム制作では拡張エディターを自作し、開発効率化にも取り組みました。
+                    </p>
+                    <p>学校：横浜デジタルアーツ専門学校  ゲーム科</p>
+                    <h2>田上ヒデオ</h2>
+                    <p>2005年 5月19日生まれ</p>
+                    <table>
+                        <tr>
+                            <th>資格</th>
+                            <td>
+                                情報技術検定 3級、
+                                CGクリエイター検定 ベーシック
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <th>趣味・特技</th>
+                            <td>ゲーム、ゲーム大会観戦</td>
+                        </tr>
+                        <tr>
+                            <th>好きなゲーム</th>
+                            <td>StreetFighter6、League of Legends、大乱闘スマッシュブラザーズ、 GUILTY GEAR -STRIVE-</td>
+                        </tr>
+                    </table>
                 </div>
             </div> 
         </div>
@@ -82,7 +86,7 @@
         </div>
         <div class="container">
             <div class="main">
-                <table border="1">
+                <table>
                 <tr>
                     <th colspan="2">開発言語・ツール</th>
                 </tr>
@@ -163,14 +167,14 @@
                         <div class="col-md-6">    
                             <h4>アピールポイント</h4>
                             <p>
-                                自作拡張エディター<br>
-                                技の情報をScriptableObjectで管理し、<br>
-                                拡張エディターで技の編集が可能。<br>
+                                技情報をScriptableObjectで管理し、
+                                拡張エディターから当たる判定やフレームデータを編集できるようにすることで、
+                                調整作業の効率化を行いました。
 
-                                <a href="https://github.com/tagamihideo/FightingGames2D">GitHub</a>
+                                <a class="github-link" href="">GitHub</a>
                             </p>
                                                 
-                            <table border="1">
+                            <table>
                                 <tr>
                                     <th>プラットフォーム</th>
                                     <td>Windows</td>
@@ -218,11 +222,12 @@
                         <div class="col-md-6">    
                             <h4>アピールポイント</h4>
                             <p>
-                                拡張エディターによるマップデータの編集<br>
-                                スクリプタブルオブジェクトによるステージごとのオブジェクト指定<br>
+                                拡張エディターを用いてマップデータを編集できるようにし、
+                                ステージごとの差し替えを容易にするため、
+                                ScriptableObjectでオブジェクト情報を管理しました。
                             </p>
                                                 
-                            <table border="1">
+                            <table>
                                 <tr>
                                     <th>プラットフォーム</th>
                                     <td>Windows</td>
@@ -274,9 +279,16 @@
                     </div>
                     <div class="col-md-6">    
                         <h4>アピールポイント</h4>
-                        <p>プレイヤーの分裂・合体処理</p>
-                        <p>スワイプ処理</p>                    
-                        <table border="1">
+                        <p>
+                        スワイプ方向によってキャラクターの分裂・合体を行う操作システムを実装し、
+                        直感的に遊べる操作感を意識しました。
+                        </p>
+
+                        <p>
+                        分裂時の位置やサイズを調整し、
+                        障害物を避けやすいゲームバランスを工夫しました。
+                        </p>               
+                        <table>
                             <tr>
                                 <th>プラットフォーム</th>
                                 <td>Android</td>
@@ -306,13 +318,13 @@
 
 <section id="avoid3D">
         <div class="title">
-            <h2>4.Block Avoid3D(制作中)</h2>
+            <h2>4.Block Avoid3D<span class="status">制作中</span></h2>
         </div>
         <div class="overview">
             <h3>概要</h3>
             <p>
-            2D版「Block Avoid」をベースに3D表現と演出面を強化した発展版です。<br>
-            基本システムはそのままに、シェーダーや3D空間を活用して、より見た目に楽しめるゲームを目指して制作しています
+                シェーダーを用いて背景やオブジェクトに変化を付け、
+                3D空間での視認性と演出面の強化を行っています。    
             </p>
         </div>
         <div class="container">
@@ -331,7 +343,7 @@
                         <p>スワイプ操作による直感的なプレイヤー制御</p>      
                         <p>シェーダーを用いた背景・オブジェクト演出</p>
                         <p>3D化による見た目の分かりやすさと演出強化</p>              
-                        <table border="1">
+                        <table>
                             <tr>
                                 <th>プラットフォーム</th>
                                 <td>Android</td>
@@ -373,9 +385,11 @@
                     </div>
                     <div class="col-md-6">    
                         <h4>アピールポイント</h4>
-                        <p>ゲーム筐体向けに作ったゲーム</p>
-                        <p>スワイプ処理</p>                    
-                        <table border="1">
+                        <p>
+                        ゲーム筐体向けに制作し、
+                        短時間でも役割分担による協力プレイを楽しめるよう設計しました。
+                        </p>                   
+                        <table>
                             <tr>
                                 <th>プラットフォーム</th>
                                 <td>ゲーム筐体</td>
@@ -425,8 +439,11 @@
                         </div>
                         <div class="col-md-6">    
                             <h4>アピールポイント</h4>
-                            <p>ゲームイベントにて3日で作成</p>
-                            <table border="1">
+                            <p>
+                                ゲームイベント内で3日間という短期間で制作し、
+                                役割分担と進行管理を意識して開発を行いました。
+                            </p>
+                            <table>
                                 <tr>
                                     <th>プラットフォーム</th>
                                     <td>Windows</td>
@@ -473,9 +490,12 @@
                         </div>
                         <div class="col-md-6">    
                             <h4>アピールポイント</h4>
-                            <p>スコア更新時の名前登録処理</p>
+                            <p>
+                                スコア更新時に名前登録を行えるランキング機能を実装し、
+                                アーケードゲームらしい遊びを再現しました。
+                            </p>
                                                 
-                            <table border="1">
+                            <table>
                                 <tr>
                                     <th>プラットフォーム</th>
                                     <td>Windows</td>

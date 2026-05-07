@@ -1,141 +1,377 @@
-/* 基本のスタイル */
 body 
 {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: #f4f6fb;
+    color: #111827;
     margin: 0;
-    padding: 0; 
-    padding-top: 80px;
+    padding: 0;
+    padding-top: 70px;
+    font-family: sans-serif;
+    line-height: 1.7;
 }
 
-img
+section 
+{
+    margin-bottom: 100px;
+}
+
+img 
 {
     max-width: 100%;
     max-height: 300px;
     height: auto;
     margin: 0 auto;
-    object-fit: contain;    /* 画像をアスペクト比を保ちつつフィットさせる */
-    padding: 20px;
-}
-
-table {
-    width: 100%;
-    margin: 0 auto 40px auto;
-    border-collapse: collapse;
-}
-
-table th
-{
-    background-color: #d3d3d3;
-    border: 1px solid #000000;
-    padding: 10px;
-    text-align: center;
-}
-
-table td {
-    border: 1px solid #000000;
-    padding: 10px;
-    text-align: center;
-}
-
-video {
-    width: 100%;  /* モバイルで全幅 */
-    max-width: 100%;
-    height: auto;
-    max-height: 200px;  /* モバイルで高さを制限 */
-    object-fit: contain;  /* アスペクト比を保つ */
+    object-fit: contain;
+    padding: 16px;
     display: block;
-    border: 3px solid #000000;
-    margin: 10px 0;  /* 余白 */
+    border-radius: 16px;
 }
 
-/* ヘッダーのスタイル */
+video 
+{
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    display: block;
+    border: 2px solid #d0d7e2;
+    border-radius: 12px;
+    margin: 16px auto;
+    background-color: #000;
+}
+
+table 
+{
+    width: 100%;
+    margin: 24px auto 0 auto;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+table th 
+{
+    width: 35%;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border: 1px solid #d0d7e2;
+    padding: 12px;
+    text-align: center;
+}
+
+table td 
+{
+    border: 1px solid #d0d7e2;
+    padding: 12px;
+    text-align: center;
+}
+
 #header 
 {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
-    background-color: #333;
+    background-color: #111827;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 
-.container 
+#header nav 
 {
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 }
 
 .header-item 
 {
-    color: rgb(255, 255, 255);
-    flex : 1;
-    align-items: center;
-    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 0;
 }
 
-/* 各項目ごとのタイトル */
+.header-item:hover 
+{
+    color: #a3b8f2;
+}
+
+.container 
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.main 
+{
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transition: 0.2s;
+}
+
+.main:hover 
+{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+}
+
 .title 
 {
-    font-size: 36px;
-    font-weight: 700;
     background-color: #1e3a8a;
     color: #ffffff;
-    padding: 20px;
+    padding: 24px;
     text-align: center;
 }
 
-/* 概要 */
-.overview
+.title h1,
+.title h2 
 {
-    font-size: 24px;
+    margin: 0;
+    font-size: 36px;
     font-weight: 700;
-    background-color: #a3b8f2;
-    color: #000000;
-    padding: 20px;
-    padding-left: 50px;
+}
+
+.overview 
+{
+    background-color: #dbe7ff;
+    color: #111827;
+    padding: 24px 48px;
     text-align: left;
 }
 
-/* 自己紹介 */
-#profile .main {
+.overview h3 
+{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.overview p 
+{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+#profile .main 
+{
     display: flex;
-    flex-direction: column; /* モバイルでは縦並び */
+    flex-direction: column;
     align-items: center;
     gap: 40px;
 }
 
-/* 代わりにスライダーのスタイルを追加 */
-.slider {
+#profile-image 
+{
+    max-width: 280px;
+}
+
+.profile-text 
+{
+    width: 100%;
+}
+
+.profile-text h2 
+{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.intro {
+    background-color: #f3f6ff;
+    border-left: 4px solid #1e3a8a;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.slider 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 340px;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    video {
-        max-width: 400px;  /* PCで幅を制限 */
-        max-height: 300px;  /* PCで高さを制限 */
+.col-md-6 > h4 
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 16px;
+}
+
+.col-md-6 > p 
+{
+    background-color: #f3f6ff;
+    padding: 10px 14px;
+    border-left: 4px solid #1e3a8a;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+ol 
+{
+    margin: 0;
+    padding-left: 24px;
+}
+
+ol li 
+{
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+ol a 
+{
+    color: #1e3a8a;
+    text-decoration: none;
+}
+
+ol a:hover 
+{
+    text-decoration: underline;
+}
+
+a 
+{
+    color: #1e3a8a;
+    font-weight: 700;
+}
+
+.status 
+{
+    font-size: 14px;
+    color: #22c55e;
+    background-color: #ecfdf5;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Slickの矢印が見えにくい場合用 */
+.slick-prev:before,
+.slick-next:before 
+{
+    color: #1e3a8a;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background-color: #111827;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* スマホ対応 */
+@media (max-width: 767px) 
+{
+    body 
+    {
+        padding-top: 60px;
     }
-    
-    #profile .main {
-        flex-direction: row; /* PCで横並び */
-        align-items: flex-start; /* 上揃えでバランス良く */
-        gap: 40px;
+
+    section 
+    {
+        margin-bottom: 72px;
     }
-    
-    #myFace {
-        flex: 1; /* 画像を柔軟に広げる */
-        max-width: 40%; /* 幅を40%に制限 */
+
+    #header nav 
+    {
+        gap: 16px;
+        font-size: 14px;
     }
-    
-    .profileText {
-        flex: 1; /* テキストを柔軟に広げる */
-        max-width: 60%; /* 幅を60%に制限 */
+
+    .container 
+    {
+        padding: 16px;
+    }
+
+    .main 
+    {
+        padding: 20px;
+    }
+
+    .title 
+    {
+        padding: 18px;
+    }
+
+    .title h1,
+    .title h2 
+    {
+        font-size: 26px;
+    }
+
+    .overview 
+    {
+        padding: 20px;
+    }
+
+    .overview h3 
+    {
+        font-size: 22px;
+    }
+
+    .overview p 
+    {
+        font-size: 16px;
+    }
+
+    table th,
+    table td 
+    {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    img 
+    {
+        padding: 8px;
+        max-height: 240px;
+    }
+
+    video 
+    {
+        max-height: 240px;
+    }
+}
+
+/* PC表示 */
+@media (min-width: 768px) 
+{
+    #profile .main 
+    {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #profile-image 
+    {
+        flex: 1;
+        max-width: 35%;
+    }
+
+    .profile-text 
+    {
+        flex: 1;
+        max-width: 65%;
     }
 }
