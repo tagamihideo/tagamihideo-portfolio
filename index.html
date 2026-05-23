@@ -117,23 +117,23 @@
                 <div class="col-md-6">
                     <div class="main">
                         <ol>
-                            <li type="1"><a href="#fight">格闘ゲーム</a></li>
-                            <li type="1"><a href="#rts">rts</a></li>
-                            <li type="1"><a href="#avoid">Block Avoid</a></li>
-                            <li type="1"><a href="#avoid3D">Block Avoid 3D</a></li>
-                            <li type="1"><a href="#tank">Tank Simulation</a></li>
-                            <li type="1"><a href="#origami">折り紙フォールディング</a></li>
-                            <li type="1"><a href="#xevious">XEVIOUS(ゼビウス)</a></li>
+                            <li><a href="#avoid3D">Block Avoid 3D <span>Unity / C#</span></a></li>
+                            <li><a href="#fight">格闘ゲーム <span>Unity / C#</span></a></li>
+                            <li><a href="#rts">RTS <span>Unity / C#</span></a></li>
+                            <li><a href="#avoid">Block Avoid <span>Unity / C#</span></a></li>
+                            <li><a href="#tank">Tank Simulation <span>Unity / C#</span></a></li>
+                            <li><a href="#origami">折り紙フォールディング <span>Unity / C#</span></a></li>
+                            <li><a href="#xevious">XEVIOUS <span>DxLib / C</span></a></li>
                         </ol>
                     </div>
                 </div>
                 <!-- 右側: スライダー -->
                 <div class="col-md-6">
                     <div class="slider">
+                        <img src="imgs/BlockAvoid3D1.png" alt="Block Avoid 3Dのスクリーンショット">
                         <img src="imgs/fighting1.png" alt="格闘ゲームのスクリーンショット">
                         <img src="imgs/rts1.png" alt="rtsのスクリーンショット">
                         <img src="imgs/BlockAvoid1.png" alt="Block Avoidのスクリーンショット">
-                        <img src="imgs/BlockAvoid3D1.png" alt="Block Avoid 3Dのスクリーンショット">
                         <img src="imgs/TankSimulation.png" alt="Tank Simulationのスクリーンショット">
                         <img src="imgs/origami.png" alt="折り紙フォールディングのスクリーンショット">
                         <img src="imgs/xevious.png" alt="XEVIOUSのスクリーンショット">
@@ -143,9 +143,67 @@
         </div>
     </section>
 
+<section id="avoid3D">
+        <div class="title">
+            <h2>1.Block Avoid3D<span class="status">制作中</span></h2>
+        </div>
+        <div class="overview">
+            <h3>概要</h3>
+            <p>
+                シェーダーを用いて背景やオブジェクトに変化を付け、
+                3D空間での視認性と演出面の強化を行っています。    
+            </p>
+        </div>
+        <div class="container">
+            <div class="main">
+                <div class="row">
+                    <div class="col-md-6">
+                        <video src="videos/avoid3D.mp4" controls>ご使用のブラウザでは動画再生に対応していません</video>
+
+                        <div class="slider">
+                            <img src="imgs/BlockAvoid3D1.png" alt="Block Avoidのスクリーンショット">
+                            <img src="imgs/BlockAvoid3D2.png" alt="Block Avoidのスクリーンショット">
+                            <img src="imgs/BlockAvoid3D3.png" alt="Block Avoidのスクリーンショット">
+                        </div>  
+                    </div>
+                    <div class="col-md-6">    
+                        <h4>アピールポイント</h4>
+                        <div class="appeal-list">
+                            <p>前作の合体・分裂システムを3D向けに再設計</p>
+                            <p>スワイプ操作による直感的なプレイヤー制御</p>      
+                            <p>シェーダーを用いた背景・オブジェクト演出</p>
+                            <p>3D化による見た目の分かりやすさと演出強化</p>   
+                        </div>
+                                   
+                        <a class="unityroom-link" href="https://unityroom.com/games/blockavoid3d" target="_blank">Unity Room</a>  
+
+                        <table>
+                            <tr>
+                                <th>プラットフォーム</th>
+                                <td>Android</td>
+                            </tr>
+                            <tr>
+                                <th>開発環境</th>
+                                <td>Unity、C#</td>
+                            </tr>
+                            <tr>
+                                <th>製作期間</th>
+                                <td>2025/3 ~ </td>
+                            </tr>
+                            <tr>
+                                <th>制作人数</th>
+                                <td>1人</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="fight">
             <div class="title">
-                <h2>1.格闘ゲーム</h2>
+                <h2>2.格闘ゲーム</h2>
             </div>
             <div class="overview">
                 <h3>概要</h3>
@@ -157,23 +215,24 @@
                 <div class="main">
                     <div class="row">
                         <div class="col-md-6">
+                            <video src="videos/fighting.mp4" controls>ご使用のブラウザでは動画再生に対応していません</video>
+
                             <div class="slider">
                                 <img src="imgs/fighting1.png" alt="fightingのスクリーンショット">
                                 <img src="imgs/fighting2.png" alt="fightingのスクリーンショット">
                                 <img src="imgs/fighting3.png" alt="fightingのスクリーンショット">
                             </div>
-                            <video src="videos/fighting.mp4" controls>ご使用のブラウザでは動画再生に対応していません</video>
                         </div>
                         <div class="col-md-6">    
                             <h4>アピールポイント</h4>
-                            <p>
-                                技情報をScriptableObjectで管理し、
-                                拡張エディターから当たる判定やフレームデータを編集できるようにすることで、
-                                調整作業の効率化を行いました。
+                            <div class="appeal-list">
+                                <p>ScriptableObjectによる技データ管理</p>
+                                <p>拡張エディターによる当たり判定・フレーム編集</p>
+                                <p>発生・持続・硬直を意識したフレーム管理</p>
+                                <p>直感的な操作感を意識したキャラクター制御</p>
+                            </div>
 
-                                <a class="github-link" href="">GitHub</a>
-                            </p>
-                                                
+                            <a class="github-link" href="https://github.com/tagamihideo/FightingGames2D">GitHub</a>             
                             <table>
                                 <tr>
                                     <th>プラットフォーム</th>
@@ -200,7 +259,7 @@
 
     <section id="rts">
             <div class="title">
-                <h2>2.rts</h2>
+                <h2>3.RTS</h2>
             </div>
             <div class="overview">
                 <h3>概要</h3>
@@ -212,21 +271,20 @@
                 <div class="main">
                     <div class="row">
                         <div class="col-md-6">
+                            <video src="videos/rts.mp4" controls>ご使用のブラウザでは動画再生に対応していません</video>
+                            
                             <div class="slider">
                                 <img src="imgs/rts1.png" alt="rtsのスクリーンショット">
                                 <img src="imgs/rts2.png" alt="rtsのスクリーンショット">
                                 <img src="imgs/rts3.png" alt="rtsのスクリーンショット">
                             </div>
-                            <video src="videos/rts.mp4" controls>ご使用のブラウザでは動画再生に対応していません</video>
                         </div>
                         <div class="col-md-6">    
                             <h4>アピールポイント</h4>
-                            <p>
-                                拡張エディターを用いてマップデータを編集できるようにし、
-                                ステージごとの差し替えを容易にするため、
-                                ScriptableObjectでオブジェクト情報を管理しました。
-                            </p>
-                                                
+                            <div class="appeal-list">
+                                <p>拡張エディターによるマップデータ編集</p>
+                                <p>ScriptableObjectによるステージ管理</p>
+                            </div>
                             <table>
                                 <tr>
                                     <th>プラットフォーム</th>
@@ -257,7 +315,7 @@
 
  <section id="avoid">
         <div class="title">
-            <h2>3.Block Avoid</h2>
+            <h2>4.Block Avoid</h2>
         </div>
         <div class="overview">
             <h3>概要</h3>
@@ -279,15 +337,10 @@
                     </div>
                     <div class="col-md-6">    
                         <h4>アピールポイント</h4>
-                        <p>
-                        スワイプ方向によってキャラクターの分裂・合体を行う操作システムを実装し、
-                        直感的に遊べる操作感を意識しました。
-                        </p>
-
-                        <p>
-                        分裂時の位置やサイズを調整し、
-                        障害物を避けやすいゲームバランスを工夫しました。
-                        </p>               
+                        <div class="appeal-list">
+                            <p>スワイプ操作による直感的なプレイヤー制御</p>
+                            <p>分裂・合体の位置やサイズを調整したゲームバランス</p>
+                        </div>            
                         <table>
                             <tr>
                                 <th>プラットフォーム</th>
@@ -316,57 +369,6 @@
         </div>
     </section>
 
-<section id="avoid3D">
-        <div class="title">
-            <h2>4.Block Avoid3D<span class="status">制作中</span></h2>
-        </div>
-        <div class="overview">
-            <h3>概要</h3>
-            <p>
-                シェーダーを用いて背景やオブジェクトに変化を付け、
-                3D空間での視認性と演出面の強化を行っています。    
-            </p>
-        </div>
-        <div class="container">
-            <div class="main">
-                <div class="row">
-                    <div class="col-md-6">
-                        <video src="videos/avoid3D.mp4" controls>ご使用のブラウザでは動画再生に対応していません</video>
-
-                        <div class="slider">
-                            <img src="imgs/BlockAvoid3D1.png" alt="Block Avoidのスクリーンショット">
-                        </div>
-                    </div>
-                    <div class="col-md-6">    
-                        <h4>アピールポイント</h4>
-                        <p>前作の合体・分裂システムを3D向けに再設計</p>
-                        <p>スワイプ操作による直感的なプレイヤー制御</p>      
-                        <p>シェーダーを用いた背景・オブジェクト演出</p>
-                        <p>3D化による見た目の分かりやすさと演出強化</p>              
-                        <table>
-                            <tr>
-                                <th>プラットフォーム</th>
-                                <td>Android</td>
-                            </tr>
-                            <tr>
-                                <th>開発環境</th>
-                                <td>Unity、C#</td>
-                            </tr>
-                            <tr>
-                                <th>製作期間</th>
-                                <td>2025/3 ~ </td>
-                            </tr>
-                            <tr>
-                                <th>制作人数</th>
-                                <td>1人</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="tank">
         <div class="title">
             <h2>5.Tank Simulation</h2>
@@ -385,10 +387,12 @@
                     </div>
                     <div class="col-md-6">    
                         <h4>アピールポイント</h4>
-                        <p>
-                        ゲーム筐体向けに制作し、
-                        短時間でも役割分担による協力プレイを楽しめるよう設計しました。
-                        </p>                   
+                        <div class="appeal-list">
+                            <p>
+                            ゲーム筐体向けに制作し、
+                            短時間でも役割分担による協力プレイを楽しめるよう設計しました。
+                            </p>
+                        </div>
                         <table>
                             <tr>
                                 <th>プラットフォーム</th>
@@ -423,26 +427,27 @@
             </div>
             <div class="overview">
                 <h3>概要</h3>
-                <p>
-                画面に表示されたキーを押して、<br>
-                スコアを競うタイピングゲームです。<br>
-                </p>
+                <div class="appeal-list">
+                    画面に表示されたキーを押して、<br>
+                    スコアを競うタイピングゲームです。<br>
+                </div>
             </div>
         <div class="container">
                 <div class="main">
                     <div class="row">
                         <div class="col-md-6">
+                            <video src="videos/origami.mp4" controls>ご使用のブラウザでは動画再生に対応していません</video>
+
                             <div class="slider">
                                 <img src="imgs/origami.png" alt="折り紙フォールディングのスクリーンショット">
                             </div>
-                            <video src="videos/origami.mp4" controls>ご使用のブラウザでは動画再生に対応していません</video>
                         </div>
                         <div class="col-md-6">    
                             <h4>アピールポイント</h4>
-                            <p>
+                            <div class="appeal-list">
                                 ゲームイベント内で3日間という短期間で制作し、
                                 役割分担と進行管理を意識して開発を行いました。
-                            </p>
+                            </div>
                             <table>
                                 <tr>
                                     <th>プラットフォーム</th>
@@ -490,11 +495,12 @@
                         </div>
                         <div class="col-md-6">    
                             <h4>アピールポイント</h4>
-                            <p>
-                                スコア更新時に名前登録を行えるランキング機能を実装し、
-                                アーケードゲームらしい遊びを再現しました。
-                            </p>
-                                                
+                            <div class="appeal-list">
+                                <p>
+                                    スコア更新時に名前登録を行えるランキング機能を実装し、
+                                    アーケードゲームらしい遊びを再現しました。
+                                </p>
+                            </div>
                             <table>
                                 <tr>
                                     <th>プラットフォーム</th>
