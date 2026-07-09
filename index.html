@@ -119,6 +119,7 @@
                         <ol>
                             <li><a href="#avoid3D">Block Avoid 3D <span>Unity / C#</span></a></li>
                             <li><a href="#fight">格闘ゲーム <span>Unity / C#</span></a></li>
+                            <li><a href="#tower">Tower Defence 3D <span>Unity / C#</span></a></li>
                             <li><a href="#rts">RTS <span>Unity / C#</span></a></li>
                             <li><a href="#avoid">Block Avoid <span>Unity / C#</span></a></li>
                             <li><a href="#tank">Tank Simulation <span>Unity / C#</span></a></li>
@@ -132,6 +133,7 @@
                     <div class="slider">
                         <img src="imgs/BlockAvoid3D1.png" alt="Block Avoid 3Dのスクリーンショット">
                         <img src="imgs/fighting1.png" alt="格闘ゲームのスクリーンショット">
+                        <img src="imgs/tower1.png" alt="Tower Defence 3Dのスクリーンショット">
                         <img src="imgs/rts1.png" alt="rtsのスクリーンショット">
                         <img src="imgs/BlockAvoid1.png" alt="Block Avoidのスクリーンショット">
                         <img src="imgs/TankSimulation.png" alt="Tank Simulationのスクリーンショット">
@@ -145,7 +147,7 @@
 
 <section id="avoid3D">
         <div class="title">
-            <h2>1.Block Avoid3D<span class="status">制作中</span></h2>
+            <h2>1.Block Avoid3D</h2>
         </div>
         <div class="overview">
             <h3>概要</h3>
@@ -175,7 +177,8 @@
                             <p>3D化による見た目の分かりやすさと演出強化</p>   
                         </div>
                                    
-                        <a class="unityroom-link" href="https://unityroom.com/games/blockavoid3d" target="_blank">Unity Room</a>  
+                        <a class="unityroom-link" href="https://unityroom.com/games/blockavoid3d" target="_blank" rel="noopener noreferrer">Unity Room</a>
+                        <a class="github-link" href="docs/block-avoid-3d-technical.pdf" target="_blank" rel="noopener noreferrer">技術資料を見る</a>  
 
                         <table>
                             <tr>
@@ -232,7 +235,8 @@
                                 <p>直感的な操作感を意識したキャラクター制御</p>
                             </div>
 
-                            <a class="github-link" href="https://github.com/tagamihideo/FightingGames2D">GitHub</a>             
+                            <a class="github-link" href="https://github.com/tagamihideo/FightingGames2D" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a class="github-link" href="docs/fighting-game-technical.pdf" target="_blank" rel="noopener noreferrer">技術資料を見る</a>             
                             <table>
                                 <tr>
                                     <th>プラットフォーム</th>
@@ -255,6 +259,63 @@
                     </div>
                 </div>
             </div>
+    </section>
+
+<section id="tower">
+        <div class="title">
+            <h2>1.TowerDefence3D<span class="status">制作中</span></h2>
+        </div>
+        <div class="overview">
+            <h3>概要</h3>
+            <p>
+                シェーダーを用いて背景やオブジェクトに変化を付け、
+                3D空間での視認性と演出面の強化を行っています。    
+            </p>
+        </div>
+        <div class="container">
+            <div class="main">
+                <div class="row">
+                    <div class="col-md-6">
+                        <video src="videos/tower.mp4" controls>ご使用のブラウザでは動画再生に対応していません</video>
+
+                        <div class="slider">
+                            <img src="imgs/tower1.png" alt="Tower Defence 3Dのスクリーンショット">
+                            <img src="imgs/tower2.png" alt="Tower Defence 3Dのスクリーンショット">
+                            <img src="imgs/tower3.png" alt="Tower Defence 3Dのスクリーンショット">
+                        </div>  
+                    </div>
+                    <div class="col-md-6">    
+                        <h4>アピールポイント</h4>
+                        <div class="appeal-list">
+                            <p>CSVによるステージ自動生成</p>
+                            <p>A*を用いたユニットの経路探索</p>      
+                            <p>StateMachineによる移動・攻撃状態の管理</p>
+                            <p>移動速度・攻撃間隔に応じたアニメーション制御</p>
+                            <p>ターゲット再取得処理による負荷軽減</p>   
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th>プラットフォーム</th>
+                                <td>PC</td>
+                            </tr>
+                            <tr>
+                                <th>開発環境</th>
+                                <td>Unity、C#</td>
+                            </tr>
+                            <tr>
+                                <th>製作期間</th>
+                                <td>2026/4 ~ </td>
+                            </tr>
+                            <tr>
+                                <th>制作人数</th>
+                                <td>3人</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="rts">
